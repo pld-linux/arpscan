@@ -5,11 +5,10 @@ Version:	0.5
 Release:	1
 License:	GPL
 Group:		Networking/Admin
-URL:		http://wizard.ae.krakow.pl/~jb/arpscan/
 Source0:	http://wizard.ae.krakow.pl/~jb/arpscan/%{name}-%{version}.tar.gz
 # Source0-md5:	681fdb51baa8f52492e2275dafca3307
-# http://standards.ieee.org/regauth/oui/oui.txt
-Source1:	oui.txt
+Source1:	http://standards.ieee.org/regauth/oui/oui.txt
+URL:		http://wizard.ae.krakow.pl/~jb/arpscan/
 BuildRequires:	gawk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,7 +26,7 @@ jest dla Linuksa.
 
 %build
 %{__make} \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -DVER=\$(VERSION) -DOUI=\$(OUI)" \
 	OUI=%{_datadir}/%{name}/oui
 
