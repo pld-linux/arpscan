@@ -8,7 +8,8 @@ Group:		Networking/Admin
 URL:		http://wizard.ae.krakow.pl/~jb/arpscan/
 Source0:	http://wizard.ae.krakow.pl/~jb/arpscan/%{name}-%{version}.tar.gz
 # Source0-md5:	681fdb51baa8f52492e2275dafca3307
-Source1:	http://standards.ieee.org/regauth/oui/oui.txt
+# http://standards.ieee.org/regauth/oui/oui.txt
+Source1:	oui.txt
 BuildRequires:	gawk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -17,9 +18,9 @@ Arpscan is a utility that scans local network using ARP protocol and
 reports alive hosts. Program is designed for Linux.
 
 %description -l pl
-Arpscan jest narzêdziem skanuj±cym sieæ lokaln± korzystaj±c z
-protoko³u ARP i wypisuj±cym aktywne komputery. Program jest
-przeznaczony dla linuksa.
+Arpscan jest narzêdziem skanuj±cym sieæ lokaln± korzystaj±c z 
+protoko³u ARP i wypisuj±cym aktywne komputery. Program przeznaczony
+jest dla Linuksa.
 
 %prep
 %setup -q
