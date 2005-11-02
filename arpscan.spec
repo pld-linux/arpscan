@@ -1,12 +1,12 @@
 Summary:	Very simple ARP scanner
 Summary(pl):	Prosty skaner ARP
 Name:		arpscan
-Version:	0.5
+Version:	0.7
 Release:	1
 License:	GPL
 Group:		Networking/Admin
 Source0:	http://wizard.ae.krakow.pl/~jb/arpscan/%{name}-%{version}.tar.gz
-# Source0-md5:	681fdb51baa8f52492e2275dafca3307
+# Source0-md5:	a07cd045f44c28495b09fa337d93f118
 Source1:	http://standards.ieee.org/regauth/oui/oui.txt
 URL:		http://wizard.ae.krakow.pl/~jb/arpscan/
 BuildRequires:	gawk
