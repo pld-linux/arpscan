@@ -1,5 +1,5 @@
 Summary:	Very simple ARP scanner
-Summary(pl):	Prosty skaner ARP
+Summary(pl.UTF-8):   Prosty skaner ARP
 Name:		arpscan
 Version:	0.8
 Release:	1
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Arpscan is a utility that scans local network using ARP protocol and
 reports alive hosts. Program is designed for Linux.
 
-%description -l pl
-Arpscan jest narzêdziem skanuj±cym sieæ lokaln± korzystaj±c z 
-protoko³u ARP i wypisuj±cym aktywne komputery. Program przeznaczony
+%description -l pl.UTF-8
+Arpscan jest narzÄ™dziem skanujÄ…cym sieÄ‡ lokalnÄ… korzystajÄ…c z 
+protokoÅ‚u ARP i wypisujÄ…cym aktywne komputery. Program przeznaczony
 jest dla Linuksa.
 
 %prep
