@@ -1,5 +1,5 @@
 Summary:	Very simple ARP scanner
-Summary(pl.UTF-8):   Prosty skaner ARP
+Summary(pl.UTF-8):	Prosty skaner ARP
 Name:		arpscan
 Version:	0.8
 Release:	1
