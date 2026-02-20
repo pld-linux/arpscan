@@ -2,7 +2,7 @@ Summary:	Very simple ARP scanner
 Summary(pl.UTF-8):	Prosty skaner ARP
 Name:		arpscan
 Version:	0.10
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Networking/Admin
 Source0:	http://wizard.ae.krakow.pl/~jb/arpscan/%{name}-%{version}.tar.gz
