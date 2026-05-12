@@ -2,13 +2,14 @@ Summary:	Very simple ARP scanner
 Summary(pl.UTF-8):	Prosty skaner ARP
 Name:		arpscan
 Version:	0.10
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Networking/Admin
 Source0:	http://wizard.ae.krakow.pl/~jb/arpscan/%{name}-%{version}.tar.gz
 # Source0-md5:	960addcbb4051ef2d1c3d9ff0562f09e
 Source1:	http://standards.ieee.org/regauth/oui/oui.txt
 # Source1-md5:	10dffbf4706f1ba00a0883b70ab88dfa
+Patch0:		arpscan-implicit-int.patch
 URL:		http://wizard.ae.krakow.pl/~jb/arpscan/
 BuildRequires:	gawk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -24,6 +25,7 @@ jest dla Linuksa.
 
 %prep
 %setup -q
+%patch -P 0 -p1
 
 %build
 %{__make} \

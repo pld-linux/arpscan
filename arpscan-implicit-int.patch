@@ -1,0 +1,11 @@
+--- arpscan-0.10/arpscan.c.orig	2012-01-01 00:00:00.000000000 +0000
++++ arpscan-0.10/arpscan.c	2026-05-12 00:00:00.000000000 +0000
+@@ -74,7 +74,7 @@
+ 	u8 len, addr[HWMAX];
+ };
+
+-static inline hw_eq(struct hwaddr *h, int hl, u8 *ha)
++static inline int hw_eq(struct hwaddr *h, int hl, u8 *ha)
+ {
+ 	return h->len == hl && memcmp(h->addr, ha, hl) == 0;
+ }
